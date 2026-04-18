@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>George Adesina | Copywriter | Interledger Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0C1A14;--mid:#364A3E;--faint:#7A8F82;--rule:#C8D8CC;
+  --green:#0B6B3A;--green-l:#1A8A50;--green-ll:#E6F5ED;
+  --gold:#B07820;--cream:#F6FAF7;--white:#FFFFFF;--dark:#071A0E;
+}
+html{font-size:16px;scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+
+/* CV */
+.cv-layout{display:grid;grid-template-columns:272px 1fr;min-height:100vh}
+.sb{background:var(--dark);padding:50px 30px 50px 38px;position:relative}
+.sb::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--green-l)}
+.sb-name{font-family:'Fraunces',serif;font-size:27px;font-weight:300;color:#DFF0E6;line-height:1.1;margin-bottom:4px}
+.sb-name em{font-style:italic;color:#72CCA0}
+.sb-role{font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#2A6B48;margin-bottom:30px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.06)}
+.sb-sec{margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.05)}
+.sb-sec:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.sb-lbl{font-size:9px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#2A6B48;display:block;margin-bottom:11px}
+.sb-item{font-size:11.5px;color:rgba(223,240,230,.55);margin-bottom:8px;display:block;line-height:1.5}
+.sb-item strong{display:block;font-size:9px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(42,107,72,.5);margin-bottom:2px}
+.sb-skill{font-size:11.5px;color:rgba(223,240,230,.5);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.04);display:flex;align-items:center;gap:7px}
+.sb-skill::before{content:'';width:4px;height:4px;background:var(--green-l);border-radius:50%;flex-shrink:0}
+.sb-skill:last-child{border-bottom:none}
+.main{background:var(--cream);padding:50px 56px 50px 60px}
+.sec-ey{font-size:9px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:6px}
+hr.sr{border:none;border-top:1px solid var(--rule);margin-bottom:20px}
+.profile{margin-bottom:36px;padding-bottom:32px;border-bottom:1px solid var(--rule)}
+.profile p{font-size:15px;color:var(--mid);line-height:1.8}
+.secblk{margin-bottom:34px}
+.exp-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px;margin-bottom:2px}
+.exp-t{font-family:'Fraunces',serif;font-size:17px;font-weight:400;color:var(--ink)}
+.exp-d{font-size:11px;color:var(--faint)}
+.exp-org{font-size:11px;color:var(--green);font-weight:500;letter-spacing:.04em;margin-bottom:10px}
+.exp-b{list-style:none}
+.exp-b li{font-size:13.5px;color:var(--mid);line-height:1.68;padding:3px 0 3px 16px;position:relative}
+.exp-b li::before{content:'';position:absolute;left:0;top:11px;width:5px;height:1px;background:var(--green)}
+.exp-blk{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--rule)}
+.exp-blk:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.edu-t{font-family:'Fraunces',serif;font-size:16px;color:var(--ink);margin-bottom:2px}
+.edu-o{font-size:11px;color:var(--green);font-weight:500;margin-bottom:4px}
+.edu-n{font-size:13px;color:var(--faint)}
+
+/* PAGE BREAK DIVIDER */
+.divider{background:var(--dark);padding:48px 40px;text-align:center}
+.divider-label{font-size:10px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:#72CCA0}
+
+/* WRITING SAMPLES SECTION */
+.samples-wrap{max-width:860px;margin:0 auto;padding:0 40px}
+
+/* sample article */
+.sample{padding:72px 0;border-bottom:1px solid var(--rule)}
+.sample:last-of-type{border-bottom:none}
+.sample-meta{display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.sm-num{font-size:9px;font-weight:500;letter-spacing:.2em;color:var(--green)}
+.sm-tag{font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;border:1px solid var(--rule);color:var(--faint)}
+.sm-spec{background:var(--green);color:white;border:none;padding:3px 10px;font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.sm-wc{font-size:11px;color:var(--faint);margin-left:auto}
+
+.art-h1{font-family:'Fraunces',serif;font-size:clamp(24px,3.8vw,36px);font-weight:400;color:var(--ink);line-height:1.22;margin-bottom:14px}
+.art-deck{font-size:16px;font-style:italic;color:var(--mid);border-left:2px solid var(--green);padding-left:16px;line-height:1.62;margin-bottom:32px;max-width:580px}
+
+.body h2{font-family:'Fraunces',serif;font-size:20px;font-weight:400;color:var(--ink);margin:34px 0 12px}
+.body h2:first-child{margin-top:0}
+.body p{font-size:15.5px;color:var(--mid);line-height:1.8;margin-bottom:16px}
+.body p:last-child{margin-bottom:0}
+.body ul{list-style:none;margin:12px 0 20px;padding:0}
+.body ul li{font-size:15px;color:var(--mid);line-height:1.72;padding:4px 0 4px 18px;position:relative}
+.body ul li::before{content:'';position:absolute;left:0;top:12px;width:6px;height:1px;background:var(--green)}
+.body strong{color:var(--ink);font-weight:500}
+.pull{font-family:'Fraunces',serif;font-size:20px;font-style:italic;color:var(--green);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:18px 0;margin:30px 0;line-height:1.5}
+.source-note{font-size:12px;color:var(--faint);font-style:italic;padding-top:28px;border-top:1px solid var(--rule);margin-top:40px}
+
+/* SOCIAL CAMPAIGN MOCKUP */
+.social-campaign{background:white;border:1px solid var(--rule);margin:28px 0;overflow:hidden}
+.sc-header{background:var(--green-ll);padding:14px 20px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.sc-platform{font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--green)}
+.sc-goal{font-size:11px;color:var(--faint);font-style:italic}
+.sc-body{padding:20px;font-size:15px;color:var(--ink);line-height:1.74;white-space:pre-line}
+
+/* EMAIL CARD */
+.email-card{border:1px solid var(--rule);margin:20px 0;overflow:hidden}
+.ec-header{background:var(--green-ll);padding:12px 20px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.ec-step{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+.ec-purpose{font-size:11px;color:var(--faint);font-style:italic}
+.ec-subj{padding:14px 20px 0;font-size:13px;color:var(--faint);font-style:italic}
+.ec-subj strong{color:var(--mid);font-style:normal}
+.ec-body{padding:12px 20px 20px;font-size:15px;color:var(--ink);line-height:1.74;white-space:pre-line}
+.seq-label{font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--green);display:block;padding:6px 0;border-bottom:1px solid var(--rule);margin:28px 0 8px}
+
+@media(max-width:700px){.cv-layout{grid-template-columns:1fr}.main{padding:36px 24px}.samples-wrap{padding:0 24px}}
+</style>
+</head>
+<body>
+
+<!-- CV -->
+<div class="cv-layout">
+<aside class="sb">
+  <div class="sb-name">George<br><em>Adesina</em></div>
+  <div class="sb-role">Freelance Copywriter</div>
+  <div class="sb-sec">
+    <span class="sb-lbl">Contact</span>
+    <span class="sb-item"><strong>Email</strong>georgethehunter707@gmail.com</span>
+    <span class="sb-item"><strong>Phone</strong>+234 803 062 9739</span>
+    <span class="sb-item"><strong>Location</strong>Lagos, Nigeria</span>
+    <span class="sb-item"><strong>Status</strong>Freelance, available for project work</span>
+  </div>
+  <div class="sb-sec">
+    <span class="sb-lbl">Areas of Specialism</span>
+    <div class="sb-skill">Email marketing and newsletter copy</div>
+    <div class="sb-skill">Social media campaigns, multi-platform</div>
+    <div class="sb-skill">Mission-driven brand communications</div>
+    <div class="sb-skill">Fintech and financial inclusion writing</div>
+    <div class="sb-skill">Audience-specific content versioning</div>
+    <div class="sb-skill">Donor and partner communications</div>
+    <div class="sb-skill">Web and digital content copy</div>
+  </div>
+  <div class="sb-sec">
+    <span class="sb-lbl">Production Skills</span>
+    <div class="sb-skill">Creative briefs for design teams</div>
+    <div class="sb-skill">Content calendar development</div>
+    <div class="sb-skill">Brand voice documentation</div>
+    <div class="sb-skill">Copy editing and proofreading</div>
+    <div class="sb-skill">Consumer behaviour research</div>
+  </div>
+  <div class="sb-sec">
+    <span class="sb-lbl">Tools</span>
+    <div class="sb-skill">Mailchimp, Brevo (email campaigns)</div>
+    <div class="sb-skill">Notion, Google Docs</div>
+    <div class="sb-skill">Instagram, LinkedIn, X, Substack</div>
+  </div>
+  <div class="sb-sec">
+    <span class="sb-lbl">Education</span>
+    <span class="sb-item"><strong>Degree</strong>B.Sc. Consumer Science, Hospitality and Tourism Management</span>
+    <span class="sb-item"><strong>University</strong>Obafemi Awolowo University, Nigeria</span>
+    <span class="sb-item"><strong>Year</strong>2026</span>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="profile">
+    <span class="sec-ey">Profile</span>
+    <hr class="sr">
+    <p>Copywriter specialising in email marketing and social media, with experience writing for audiences that require specific, accurate, and mission-aligned communication. My work has required understanding the gap between how an organisation describes itself and how its actual audience experiences the problem it is trying to solve. For the Interledger Foundation, that means writing about open payment infrastructure in a way that reaches not just developers but the policymakers, grantees, and community organisations whose participation makes the mission work. I write for the consequence, not the technology.</p>
+  </div>
+
+  <div class="secblk">
+    <span class="sec-ey">Experience</span>
+    <hr class="sr">
+    <div class="exp-blk">
+      <div class="exp-head"><span class="exp-t">Marketing Copywriter</span><span class="exp-d">2026 &ndash; Present</span></div>
+      <div class="exp-org">Seller Africa &amp; Caribbean Marketplace &middot; Remote</div>
+      <ul class="exp-b">
+        <li>Wrote and published email campaigns, social media content, and newsletter copy across Instagram, Facebook, LinkedIn, X, and Substack, adapting tone and structure to platform and audience segment.</li>
+        <li>Built a Ramadan Essentials campaign grounded in diaspora consumer behaviour research, requiring the same skill ILF needs: writing about something that matters deeply to a specific community in a way that resonates from genuine understanding rather than assumed familiarity.</li>
+        <li>Built and managed monthly content calendars; designed creative briefs that gave design teams clear direction before assets were built.</li>
+        <li>Produced email sequences and campaign structures for multiple audience types, with each email mapped to a specific objective and stage in the reader journey.</li>
+      </ul>
+    </div>
+    <div class="exp-blk">
+      <div class="exp-head"><span class="exp-t">Copywriter</span><span class="exp-d">2025 &ndash; 2026</span></div>
+      <div class="exp-org">Independent Projects &middot; Email, Social, and Campaign Copy</div>
+      <ul class="exp-b">
+        <li>Developed multi-email welcome sequences and nurture campaigns for brands across lifestyle, food, and consumer categories.</li>
+        <li>Wrote social media campaigns for donor and community-facing communications, requiring the same mission-first register that nonprofit audiences expect.</li>
+        <li>Produced long-form content on business, finance, and marketing topics for a non-expert general audience, demonstrating ability to make complex subjects accessible without losing accuracy.</li>
+      </ul>
+    </div>
+    <div class="exp-blk">
+      <div class="exp-head"><span class="exp-t">Industrial Training Placement</span><span class="exp-d">July &ndash; October 2025</span></div>
+      <div class="exp-org">Eko Hotels &amp; Suites, Victoria Island, Lagos</div>
+      <ul class="exp-b">
+        <li>Completed structured training in a guest-facing service environment, developing understanding of how institutional communication differs from promotional communication.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="secblk">
+    <span class="sec-ey">Education</span>
+    <hr class="sr">
+    <div class="edu-t">B.Sc. Consumer Science, Hospitality and Tourism Management</div>
+    <div class="edu-o">Obafemi Awolowo University, Nigeria &middot; 2026</div>
+    <div class="edu-n">Consumer behaviour, purchasing decision systems, service marketing, brand strategy. Directly applicable to audience research and the identification of what actually motivates people to act on a message.</div>
+  </div>
+</main>
+</div>
+
+<!-- DIVIDER -->
+<div class="divider">
+  <div class="divider-label">Writing Samples &mdash; Prepared for Interledger Foundation</div>
+</div>
+
+<!-- SAMPLES -->
+<div class="samples-wrap">
+
+  <!-- SAMPLE 1: FINTECH EXPLAINER -->
+  <article class="sample">
+    <div class="sample-meta">
+      <span class="sm-num">01</span>
+      <span class="sm-spec">Spec</span>
+      <span class="sm-tag">Fintech Explainer</span>
+      <span class="sm-wc">~820 words</span>
+    </div>
+    <h1 class="art-h1">Why Sending $200 from London to Lagos Still Costs More Than It Should</h1>
+    <p class="art-deck">The average cost of sending money across borders sits at 6.4% globally. For the people who rely on remittances most, the cost is often higher. Here is why, and what open payment infrastructure is actually trying to fix.</p>
+
+    <div class="body">
+      <p>In 2022, migrants around the world sent $794 billion in remittances to their home countries. That figure, from the World Bank, represents money that low and middle-income households used for food, school fees, medical care, and small business investment. It is also a figure that came after fees. The $794 billion is what arrived. The amount sent was significantly higher.</p>
+
+      <p>The World Bank's Remittance Prices Worldwide database tracked the average cost of sending $200 internationally at 6.35% in the first quarter of 2023. For remittance corridors from sub-Saharan Africa, the average was 7.8%. For some corridors, the figure exceeds 10%. The G20 set a target in 2011 of reducing the global average to 5% by 2014. It is now 2024. The target has not been met.</p>
+
+      <p>The reason the price stays high is not technical. It is structural.</p>
+
+      <h2>What happens between the send and the receive</h2>
+
+      <p>When you send money from London to Lagos, the transaction does not travel directly from your account to the recipient's. It moves through a chain of intermediaries: your bank, one or more correspondent banks, a local settlement institution, and the recipient's bank or mobile wallet provider. Each node in that chain charges a fee for the service of passing the transaction along and takes a margin on the exchange rate. By the time the money arrives, the total cost of the journey has been absorbed from the principal.</p>
+
+      <p>The reason this chain exists is that financial systems were built in national silos. Every country has its own banking infrastructure, its own currency, its own regulatory framework, and its own settlement systems. These systems do not natively communicate with each other. The correspondent banking network was the solution developed before the internet, and it has persisted partly because replacing it requires coordination across thousands of institutions in hundreds of jurisdictions, and partly because the institutions that profit from it have limited incentive to see it replaced.</p>
+
+      <div class="pull">The cost of sending money internationally stays high not because the technology is hard. It is because the infrastructure was built to keep institutions in the middle of every transaction.</div>
+
+      <h2>What the Interledger Protocol is actually proposing</h2>
+
+      <p>The Interledger Protocol (ILP) approaches this the way the internet approached incompatible computer networks in the 1970s. TCP/IP did not replace every computer network in existence. It created a common language that allowed those networks to communicate across their differences, so that a message sent from one network could arrive intact on a completely different system without either network needing to be rebuilt.</p>
+
+      <p>ILP proposes the same architecture for value transfer. Rather than replacing the banking systems, mobile wallets, and payment networks that exist, it creates a standard that lets those systems transact across their existing infrastructure without routing through a chain of correspondent intermediaries. A mobile money wallet in Nigeria and a digital bank account in the United Kingdom would not need to share a network, a currency, or a corporate relationship to transact directly. They would need to speak ILP.</p>
+
+      <p>The practical implication for the person sending $200 to a family member is that a direct transaction between two compliant endpoints removes the correspondent banking chain and its associated fees. The exchange rate still applies. The friction of finding compatible endpoints still applies. But the per-transaction cost structure is fundamentally different when four intermediaries become zero.</p>
+
+      <h2>Why this has not already happened</h2>
+
+      <p>Open standards are adopted when the coordination costs of adoption are lower than the benefits they unlock. For internet protocols, adoption accelerated once enough institutions were connected that network effects kicked in: a standard that let you communicate with a hundred institutions was more valuable than the proprietary system that kept you siloed.</p>
+
+      <p>For payment infrastructure, the adoption problem is harder. Financial institutions operate under regulatory frameworks that require certainty about who their counterparties are, what laws apply, and how disputes are resolved. An open protocol for value transfer has to provide answers to those questions before regulated institutions can use it, regardless of how technically sound the protocol itself is.</p>
+
+      <p>This is the work that is actually difficult: not building the protocol, but building the trust, regulatory acceptance, and institutional adoption that makes the protocol useful at scale. It is social and political infrastructure as much as technical infrastructure. And it is the reason that an organisation devoted to fostering that adoption, through grants, education, policy engagement, and developer support, exists alongside the technical standard itself.</p>
+
+      <p>The $794 billion that arrived in 2022 represents the fraction of the global remittance flow that survived the intermediary chain. The Interledger Foundation's work is about changing the conditions under which that chain is even necessary.</p>
+
+      <div class="source-note">Sources: World Bank Remittance Prices Worldwide Database (Q1 2023); World Bank Migration and Development Brief (2023); Interledger Foundation technical documentation; G20 Financial Inclusion Action Plan targets.</div>
+    </div>
+  </article>
+
+
+  <!-- SAMPLE 2: SOCIAL MEDIA CAMPAIGN -->
+  <article class="sample">
+    <div class="sample-meta">
+      <span class="sm-num">02</span>
+      <span class="sm-spec">Spec</span>
+      <span class="sm-tag">Social Media Campaign</span>
+    </div>
+    <h1 class="art-h1">Social Campaign: "The Cost of Getting Paid"</h1>
+    <p class="art-deck">A three-post social media sequence for the Interledger Foundation, targeting three distinct audiences across LinkedIn and Twitter/X. Each post has a different entry point, same core message.</p>
+
+    <div class="body">
+      <p>Campaign brief I set for myself: reach people who have never heard of Interledger or open payment infrastructure, but who have direct experience with the problems it is trying to solve. The goal is not to explain the protocol. It is to make the problem feel real and the solution feel possible.</p>
+
+      <span class="seq-label">Post 1 of 3 &mdash; LinkedIn &mdash; Policy and development audience</span>
+
+      <div class="social-campaign">
+        <div class="sc-header"><span class="sc-platform">LinkedIn &middot; Policy / Development</span><span class="sc-goal">Connect financial inclusion policy to ILP's work</span></div>
+        <div class="sc-body">The G20 set a target to reduce global remittance costs to 5% by 2014.
+
+It's 2024.
+
+The current global average: 6.4%. For sub-Saharan African corridors: 7.8%.
+
+The problem isn't technical complexity. The world built financial systems country by country, and those systems never learned to speak to each other natively. Every cross-border transaction still has to route through a chain of correspondent banks that each charge for the service of passing money along.
+
+The Interledger Protocol is a common language for payment networks, the same way TCP/IP is a common language for computer networks. It doesn't replace existing infrastructure. It lets them transact directly, without the intermediary chain.
+
+2.11 billion people still don't have access to a bank account. For many of them, the cost of receiving money from a relative abroad is one of the most concrete barriers to financial participation.
+
+This is what financial inclusion infrastructure actually looks like when you get down to the mechanism.
+
+#FinancialInclusion #OpenPayments #Interledger #Fintech</div>
+      </div>
+
+      <span class="seq-label">Post 2 of 3 &mdash; Twitter/X &mdash; Developer and fintech audience</span>
+
+      <div class="social-campaign">
+        <div class="sc-header"><span class="sc-platform">Twitter/X &middot; Developer / Fintech</span><span class="sc-goal">Technical credibility, short form</span></div>
+        <div class="sc-body">Interesting problem:
+
+The internet needed TCP/IP because every computer network had its own protocol. A message from one couldn't arrive intact on another.
+
+The same problem exists for payment networks. A mobile wallet in one country and a bank account in another can't transact directly, so correspondent banks sit in the middle and charge for the service.
+
+Interledger Protocol (ILP) is the TCP/IP approach applied to value transfer. Common language, not a replacement infrastructure.
+
+The adoption problem is harder than the technical problem. Which is exactly why a foundation focused on that adoption exists.
+
+interledger.org</div>
+      </div>
+
+      <span class="seq-label">Post 3 of 3 &mdash; Instagram/LinkedIn &mdash; General awareness</span>
+
+      <div class="social-campaign">
+        <div class="sc-header"><span class="sc-platform">Instagram / LinkedIn &middot; General audience</span><span class="sc-goal">Human story entry point, lowest barrier</span></div>
+        <div class="sc-body">Imagine working abroad for a month and sending $200 home for your family's groceries.
+
+By the time it arrives, $12 to $16 of it has disappeared in fees.
+
+Not because sending money is technically hard. Because the financial systems that exist were built in national silos and never learned to connect directly. Every transfer has to route through intermediaries who each take a cut.
+
+This is the daily reality for over 200 million migrant workers who send money home each year.
+
+The Interledger Foundation is working on the infrastructure that changes this. Open payment standards that let any wallet, any bank, any system transact with any other, without the intermediary chain.
+
+The technology exists. The work now is adoption, policy, and the kind of patient institution-building that doesn't make headlines but changes who gets to participate in the digital economy.
+
+Link in bio.</div>
+      </div>
+    </div>
+  </article>
+
+
+  <!-- SAMPLE 3: EMAIL SEQUENCE -->
+  <article class="sample">
+    <div class="sample-meta">
+      <span class="sm-num">03</span>
+      <span class="sm-spec">Spec</span>
+      <span class="sm-tag">Email Sequence</span>
+    </div>
+    <h1 class="art-h1">Donor and Partner Email Sequence</h1>
+    <p class="art-deck">A three-email sequence written for the Interledger Foundation's donor and institutional partner audience. Each email has a distinct objective and is mapped to a specific point in the relationship.</p>
+
+    <div class="body">
+
+      <span class="seq-label">Email 1 of 3 &mdash; New donor or partner welcome</span>
+
+      <div class="email-card">
+        <div class="ec-header"><span class="ec-step">Welcome &middot; Sent on day of first gift or partnership confirmation</span><span class="ec-purpose">Orient and affirm</span></div>
+        <div class="ec-subj"><strong>Subject:</strong> You've joined something that's building for the long term</div>
+        <div class="ec-body">Thank you for your support.
+
+We don't say that as a formality. The work the Interledger Foundation does, building the open payment infrastructure that lets any wallet or bank account transact with any other, takes years. Grants to developers and fintech startups working on open standards. Policy engagement with regulators who need to understand what interoperability actually means before they can support it. Education that reaches communities in 40 countries who stand to benefit most when the financial system stops requiring intermediaries for every transaction.
+
+None of that happens without people who believe in the long-term thesis.
+
+Here's what you can expect from us. We'll update you on the specific initiatives your support is enabling. We'll share progress from the grantees building on the Interledger Protocol. And when something significant happens in open payments, globally or in a region you care about, you'll hear about it from us before it's in the press.
+
+If you have questions about how your contribution is being used, reply directly to this email. We keep a small team and this inbox is read by real people.
+
+Thank you again.
+
+The Interledger Foundation Team</div>
+      </div>
+
+      <span class="seq-label">Email 2 of 3 &mdash; Impact update, sent at 30 days</span>
+
+      <div class="email-card">
+        <div class="ec-header"><span class="ec-step">Impact update &middot; Sent on Day 30 &middot; Objective: demonstrate concrete progress</span><span class="ec-purpose">Reinforce the decision</span></div>
+        <div class="ec-subj"><strong>Subject:</strong> What's happened in the last 30 days</div>
+        <div class="ec-body">A month in, we wanted to give you a concrete picture of what's moving.
+
+The Interledger Foundation has now deployed over $21 million of its $100 million endowment across initiatives in more than 40 countries. That capital has gone to developers building open-source payment tools, fintech startups in emerging markets working on wallet interoperability, and community organisations in regions where the cost of receiving a remittance can represent 10% of the principal.
+
+In the last month specifically, our grantee cohort has expanded to include teams working on payment corridors in West Africa and digital wallet integration in Southeast Asia. Both are regions where mobile money adoption has outpaced formal banking access, and where open payment standards would have the most immediate impact on the cost and accessibility of financial services.
+
+The work is not fast. Open standards are adopted institution by institution, regulator by regulator. But the momentum is real.
+
+Next month we'll share a more detailed breakdown of the grantee cohort and what each team is building. If there's a region or use case you're most interested in following, reply and tell us. We can make sure you're getting the updates most relevant to what you care about.
+
+The Interledger Foundation</div>
+      </div>
+
+      <span class="seq-label">Email 3 of 3 &mdash; Re-engagement or renewal, sent at 90 days</span>
+
+      <div class="email-card">
+        <div class="ec-header"><span class="ec-step">Renewal &middot; Sent at Day 90 &middot; Objective: deepen commitment or invite referral</span><span class="ec-purpose">Convert to sustained relationship</span></div>
+        <div class="ec-subj"><strong>Subject:</strong> Three months in: the state of open payments</div>
+        <div class="ec-body">Three months ago, you chose to support the work of building open payment infrastructure.
+
+Here's where things stand.
+
+The Interledger Foundation's grantees are now active across 40+ countries. The developer community building on the Interledger Protocol has grown significantly in the past year, with particular acceleration in Latin America following our hackathon and university engagement programmes in Mexico. Regulators in three target markets have opened formal conversations about open payment standards for the first time.
+
+None of this is a victory lap. Open payment infrastructure is a decades-long project, and the tipping point, the moment when enough institutions and regulators have adopted open standards that network effects kick in and fees start falling structurally, is not imminent. But the conditions for it are being built now. That is what your support is part of.
+
+If you've found the work of the foundation meaningful, we'd welcome an introduction to others in your network who care about financial inclusion, fintech policy, or equitable digital infrastructure. The foundation's work expands when more institutions and individuals understand why open payment standards matter.
+
+And if you have questions, reactions, or feedback about the past three months, reply to this email. We read every response.
+
+Thank you for staying in this with us.
+
+The Interledger Foundation</div>
+      </div>
+
+    </div>
+  </article>
+
+</div><!-- end .samples-wrap -->
+
+</body>
+</html>
